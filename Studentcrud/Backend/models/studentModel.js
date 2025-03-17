@@ -24,6 +24,20 @@ const Student = {
     delete: (id, callback) => {
         db.query("DELETE FROM student WHERE StudentId = ?", [id], callback);
     },
+
+    // delete: (id, callback) => {
+    //     db.query("DELETE FROM student WHERE StudentId = ?", [id], (error, result) => {
+    //         if (error) {
+    //             return callback(error, null);
+    //         }
+
+    //         if (result.affectedRows === 0) {
+    //             return callback(null, { error: "There is no student with this ID" });
+    //         }
+
+    //         return callback(null, { message: "Student deleted successfully" });
+    //     });
+    // },
 };
 
 module.exports = Student;
