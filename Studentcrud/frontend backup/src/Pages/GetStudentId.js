@@ -41,7 +41,7 @@ function GetStudentId() {
                     <p><strong>ID:</strong> {studentData.StudentId || 'N/A'}</p>
                     <p><strong>Name:</strong> {studentData.StudentName || 'N/A'}</p>
                     <p><strong>Age:</strong> {studentData.StudentAge || 'N/A'}</p>
-                    <p><strong>Department:</strong> {studentData.StudentDepartment || 'N/A'}</p>
+                    <p><strong>Department:</strong> {studentData.StudentDeprtment || 'N/A'}</p>
                 </div>
             )}
         </>

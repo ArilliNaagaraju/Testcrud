@@ -12,7 +12,7 @@ function PutStudentData() {
         StudentId: student?.StudentId || '',
         StudentName: student?.StudentName || '',
         StudentAge: student?.StudentAge || '',
-        StudentDepartment: student?.StudentDepartment || ''
+        StudentDeprtment: student?.StudentDeprtment || ''
     });
 
     // Handle input change
@@ -29,7 +29,7 @@ function PutStudentData() {
             StudentId: formData.StudentId, 
             StudentName: formData.StudentName || student.StudentName,
             StudentAge: formData.StudentAge || student.StudentAge,
-            StudentDeprtment: formData.StudentDepartment || student.StudentDeprtment
+            StudentDeprtment: formData.StudentDeprtment || student.StudentDeprtment
         };
 
         try {
@@ -66,7 +66,7 @@ function PutStudentData() {
                 <input
                     type="text"
                     name="StudentDepartment"
-                    value={formData.StudentDepartment}
+                    value={formData.StudentDeprtment}
                     onChange={handleChange}
                 />
 
